@@ -1,17 +1,17 @@
 #
-# Make this small C project
+# Make this small C++ Greeter
 #
 
-CC = gcc
+CPP = g++
 
 all:
 	$(MAKE) clean
-	$(CC) src/app.c src/header.c -o app
+	$(CPP) src/app.cpp src/Greeter.cpp -o app
 	
 	echo "Finished"
 
 clean:
 	$(RM) app
-
+	
 .SILENT: all clean
 .PHONY: all clean

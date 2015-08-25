@@ -3,4 +3,6 @@
 
 int main(void) {
     greeting("SitePoint");
+    
+    return 0;
 }
