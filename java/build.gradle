@@ -1,0 +1,28 @@
+// compile java
+apply plugin: 'java'
+
+// make the runnable application
+apply plugin: 'application'
+
+// set the main class of the runnable
+mainClassName = "com.sitepoint.App"
+
+jar {
+    baseName = 'Greeter'
+    version = '0.1.0'
+}
+
+// allow fetching dependencies from mvn repos
+repositories {
+    mavenCentral()
+}
+
+// obtain and compile dependencies
+dependencies {
+    compile "joda-time:joda-time:2.2"
+}
+
+// create gradlew
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
