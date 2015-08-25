@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    
     Greeter *g = new Greeter("SitePoint");
     g->greet();
     
